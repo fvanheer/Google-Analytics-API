@@ -26,6 +26,10 @@ pandas
 
 You can find the code in the google_query.py file
 
+## Setup Guide
+
+For this example, store your credentials anywhere you like and simply pass it through the query. Store client_secrets_v3.json and analytics.dat in the project folder. 
+
 ## Import the libraries
 
 ```Python
