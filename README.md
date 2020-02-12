@@ -51,7 +51,6 @@ store = 4363436
 ##########################################################################################################################################
 
 #query structure
-
 query_new = {\
     'ids'           : store,
     'metrics'       : 'users',
@@ -116,3 +115,4 @@ df_final.to_csv('google_user_by_device.csv')
 ## Acknowledgments
 
 * [Google2Pandas](https://github.com/panalysis/Google2Pandas) - More info
+
