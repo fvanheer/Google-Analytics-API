@@ -28,7 +28,7 @@ You can find the code in the google_query.py file
 
 ## Setup Guide
 
-For this example, store your credentials anywhere you like and simply pass it through the query. You need to follow the [setup guide](https://developers.google.com/analytics/devguides/reporting/core/v3/quickstart/installed-py) client_secrets_v3.json and analytics.dat in the project folder.
+For this example, store your credentials anywhere you like and simply pass it through the query. You need to follow the [setup guide](https://developers.google.com/analytics/devguides/reporting/core/v3/quickstart/installed-py) to create the client_secrets_v3.json and analytics.dat files.
 
 ## Import the libraries
 
