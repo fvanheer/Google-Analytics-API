@@ -1,7 +1,7 @@
 
 # Query Google Analytics API
 
-Simple and useful approach to include some Google Analytics data in your ETL process or inrich your data for analytics with transactional data. This boalerplate example will enable you to customise your queries to your business needs.  
+Simple and useful approach to include some Google Analytics data in your ETL process or enrich your data for analytics with transactional data. This boalerplate example will enable you to customise your queries to your business needs.  
 
 * [Google API]() - More info
 * [Google2Pandas](https://github.com/panalysis/Google2Pandas) - More info
