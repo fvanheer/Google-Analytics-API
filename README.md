@@ -26,6 +26,10 @@ pandas
 
 You can find the code in the google_query.py file
 
+## Setup Guide
+
+For this example, store your credentials anywhere you like and simply pass it through the query. Store client_secrets_v3.json and analytics.dat in the project folder. 
+
 ## Import the libraries
 
 ```Python
@@ -39,8 +43,8 @@ from google2pandas import *
 import pandas as pd
 
 #query parameters
-max_result = 10000
-store = 4363436
+max_result = 10000 #max row results
+store = 111111 #store number
 ```
 
 ## Define the google analytics queries
@@ -94,7 +98,7 @@ def google_df():
     df_new, metadata = conn.execute_query(**query_new)
     df_returning, metadata = conn.execute_query(**query_returning)
 
-    #write the dataframes to DB
+    #append the dataframes
     df = df_new.append(df_returning, ignore_index=True)
     return(df)
 
@@ -106,7 +110,8 @@ df_final.to_csv('google_user_by_device.csv')
 ```
 
 ### Deployment Options
-* Include the computations as a part of your ETL process (I use [KNIME](https://www.knime.com/)) - Include it as a step before writing the final customer lifetime table to your Data Warehouse.
+* Include the computations as a part of your ETL process (I use [KNIME](https://www.knime.com/))
+* This can also be run as a simple cron job on a daily or weekly basis depending on the structure of the data and the use case. 
 
 ## Author
 

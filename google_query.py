@@ -8,7 +8,7 @@ import pandas as pd
 
 #query parameters
 max_result = 10000
-store = 4363436
+store = 111111 #store number
 
 ##########################################################################################################################################
 ### DEFINE QUERIES ###
@@ -52,7 +52,7 @@ def google_df():
     df_new, metadata = conn.execute_query(**query_new)
     df_returning, metadata = conn.execute_query(**query_returning)
 
-    #write the dataframes to DB
+    #append the dataframes
     df = df_new.append(df_returning, ignore_index=True)
     return(df)
 
